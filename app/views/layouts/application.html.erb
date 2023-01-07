@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BlogShop</title>
+    <title>Słowo na płótnie</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ms Madi">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Send Flowers">
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application", media: 'all', "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <%= yield %>
+    <div class='content'>
+      <h1> Słowo na płótnie </h1>
+      <%#= render 'layouts/nav'%>
+      <%= yield %>
+    </div>
   </body>
 </html>
